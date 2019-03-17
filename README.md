@@ -1,3 +1,10 @@
 # Archer
 
-A architecture library for Android apps built on Android Architecture Components.
+The modules I want for Android apps powered by Android Jetpack.
+
+# Subjects
+
+- Android Jetpack
+- Kotlin
+- Material Design
+- Component-based Architecture
