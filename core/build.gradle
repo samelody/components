@@ -19,10 +19,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation deps.lifecycle.extensions
-    implementation(deps.support.appcompat, {
-        exclude group: 'android.arch.lifecycle'
-    })
+    implementation deps.appcompat
     testImplementation deps.junit
     androidTestImplementation deps.test
     androidTestImplementation deps.espresso

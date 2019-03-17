@@ -6,6 +6,7 @@ ext.vers = vers
 
 vers.support = "27.1.1"
 vers.constraint = "1.0.2"
+vers.androidx = "1.0.0"
 vers.lifecycle = "1.1.1"
 vers.room = "1.1.0-alpha2"
 vers.paging = "1.0.0-alpha5"
@@ -18,14 +19,10 @@ vers.compileSdk = 27
 vers.minSdk = 15
 vers.targetSdk = 27
 
-def support = [:]
-support.constraint = "com.android.support.constraint:constraint-layout:$vers.constraint"
-support.v4 = "com.android.support:support-v4:$vers.support"
-support.design = "com.android.support:design:$vers.support"
-support.cardview = "com.android.support:cardview-v7:$vers.support"
-support.appcompat = "com.android.support:appcompat-v7:${vers.support}"
-support.recyclerview = "com.android.support:recyclerview-v7:$vers.support"
-deps.support = support
+deps.constraint = "androidx.constraintlayout:constraint-layout:$vers.androidx"
+deps.cardview = "com.android.support:cardview-v7:$vers.support"
+deps.appcompat = "androidx.appcompat:appcompat:${vers.androidx}"
+deps.recyclerview = "com.android.support:recyclerview-v7:$vers.support"
 
 def lifecycle = [:]
 lifecycle.runtime = "android.arch.lifecycle:runtime:$vers.lifecycle"
