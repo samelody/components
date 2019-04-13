@@ -3,7 +3,7 @@ object Deps {
     const val compileSdk = 28
     const val targetSdk = 28
     const val minSdk = 15
-    const val kotlinVersion = "1.3.21"
+    const val kotlinVersion = "1.3.30"
     const val buildTools = "28.0.3"
 
     // plugins
