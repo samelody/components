@@ -10,6 +10,18 @@ A collection of components for Android apps.
 - Material Design
 - Component-based Architecture
 
+# Components
+
+- `adapter`: Modular adapter for Android RecyclerView.
+- `livebattery`: A LiveData for monitoring Android battery.
+- `okt`: [IDEA] Kotlin DSL for OkHttp.
+- `icontext`: [IDEA] IconTextView for Android.
+- `upload`: [IDEA] Upload engine via HTTP.
+- `download`: [IDEA] Download engine via HTTP.
+- `wifile`: [IDEA] Transfer files via Wi-Fi.
+- `router`: [IDEA] A routing library for Android.
+- `solunar`: [IDEA] A solar and lunar calendar library for Android.
+
 # License
 
 ```
