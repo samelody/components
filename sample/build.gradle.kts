@@ -5,7 +5,7 @@ plugins {
 android {
     compileSdkVersion(Deps.compileSdk)
     defaultConfig {
-        applicationId = "com.samelody.archer.sample"
+        applicationId = "com.samelody.components.sample"
         minSdkVersion(Deps.minSdk)
         targetSdkVersion(Deps.targetSdk)
         versionCode = 1
@@ -25,4 +25,5 @@ dependencies {
     implementation(Deps.appCompat)
     testImplementation(Deps.junit)
     androidTestImplementation(Deps.testCore)
+    androidTestImplementation(Deps.testRunner)
 }

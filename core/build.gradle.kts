@@ -24,4 +24,5 @@ dependencies {
     implementation(Deps.appCompat)
     testImplementation(Deps.junit)
     androidTestImplementation(Deps.testCore)
+    androidTestImplementation(Deps.testRunner)
 }

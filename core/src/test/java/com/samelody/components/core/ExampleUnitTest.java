@@ -1,4 +1,4 @@
-package com.samelody.archer;
+package com.samelody.components.core;
 
 import org.junit.Test;
 

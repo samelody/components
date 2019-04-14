@@ -14,4 +14,5 @@ object Deps {
     const val appCompat = "androidx.appcompat:appcompat:1.0.0"
     const val junit = "junit:junit:4.12"
     const val testCore = "androidx.test:core:1.1.0"
+    const val testRunner = "androidx.test:runner:1.1.0"
 }
