@@ -7,7 +7,7 @@ object Deps {
     const val buildTools = "28.0.3"
 
     // plugins
-    const val androidGradlePlugin = "com.android.tools.build:gradle:3.3.2"
+    const val androidGradlePlugin = "com.android.tools.build:gradle:3.4.0"
     const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
 
     // libs
