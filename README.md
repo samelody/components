@@ -2,6 +2,8 @@
 
 A collection of components for Android apps.
 
+**Working in Progress**
+
 # Subjects
 
 - Android Jetpack
@@ -21,6 +23,10 @@ A collection of components for Android apps.
 - `wifile`: [IDEA] Transfer files via Wi-Fi.
 - `router`: [IDEA] A routing library for Android.
 - `solunar`: [IDEA] A solar and lunar calendar library for Android.
+
+# Git Flow
+
+The develop branch is `master`，and the product-ready branch is `release`.
 
 # License
 
