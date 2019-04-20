@@ -1,4 +1,4 @@
-# Samelody Components
+# Android Components @Samelody
 
 A collection of components for Android apps.
 

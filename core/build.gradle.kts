@@ -2,6 +2,11 @@ plugins {
     id("com.android.library")
 }
 
+apply {
+    plugin("kotlin-android")
+    plugin("kotlin-android-extensions")
+}
+
 android {
     compileSdkVersion(Deps.compileSdk)
     defaultConfig {
@@ -22,6 +27,7 @@ android {
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     implementation(Deps.appCompat)
+    implementation(Deps.kotlinStdlib)
     testImplementation(Deps.junit)
     androidTestImplementation(Deps.testCore)
     androidTestImplementation(Deps.testRunner)
