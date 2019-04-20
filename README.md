@@ -14,15 +14,22 @@ A collection of components for Android apps.
 
 # Components
 
+### WIP
+
+- `core`: core feature component.
+- `squarelayout`: a collection of layouts be laid out as square.
+
+### IDEA
+
 - `adapter`: Modular adapter for Android RecyclerView.
 - `livebattery`: A LiveData for monitoring Android battery.
-- `okt`: [IDEA] Kotlin DSL for OkHttp.
-- `icontext`: [IDEA] IconTextView for Android.
-- `upload`: [IDEA] Upload engine via HTTP.
-- `download`: [IDEA] Download engine via HTTP.
-- `wifile`: [IDEA] Transfer files via Wi-Fi.
-- `router`: [IDEA] A routing library for Android.
-- `solunar`: [IDEA] A solar and lunar calendar library for Android.
+- `okt`: Kotlin DSL for OkHttp.
+- `icontext`: IconTextView for Android.
+- `upload`: Upload engine via HTTP.
+- `download`: Download engine via HTTP.
+- `wifile`: Transfer files via Wi-Fi.
+- `router`: A routing library for Android.
+- `solunar`: A solar and lunar calendar library for Android.
 
 # Git Flow
 
