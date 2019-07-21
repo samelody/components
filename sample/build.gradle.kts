@@ -22,6 +22,7 @@ android {
 
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+    implementation(Deps.core)
     implementation(Deps.appCompat)
     testImplementation(Deps.junit)
     androidTestImplementation(Deps.testCore)
