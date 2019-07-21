@@ -5,6 +5,7 @@ import android.content.*
 import android.os.Build.VERSION_CODES.*
 import android.util.*
 import android.widget.*
+import kotlin.math.*
 
 /**
  * [FrameLayout] which forces itself to be laid out as square.
@@ -26,7 +27,7 @@ class SquareFrameLayout @JvmOverloads constructor(
         if (widthSize == 0 && heightSize == 0) {
             super.onMeasure(widthMeasureSpec, heightMeasureSpec)
 
-            val minSize = Math.min(measuredWidth, measuredHeight)
+            val minSize = min(measuredWidth, measuredHeight)
             setMeasuredDimension(minSize, minSize)
             return
         }
@@ -34,11 +35,11 @@ class SquareFrameLayout @JvmOverloads constructor(
         val size = when {
             // If one of the dimensions has no restriction on size, set both dimensions to be the
             // on that does
-            widthSize == 0 || heightSize == 0 -> Math.max(widthSize, heightSize)
+            widthSize == 0 || heightSize == 0 -> max(widthSize, heightSize)
 
             // Both dimensions have restrictions on size, set both dimensions to be the
             // smallest of the two
-            else -> Math.min(widthSize, heightSize)
+            else -> min(widthSize, heightSize)
         }
 
         val newSpec = MeasureSpec.makeMeasureSpec(size, MeasureSpec.EXACTLY)
@@ -66,7 +67,7 @@ class SquareLinearLayout @JvmOverloads constructor(
         if (widthSize == 0 && heightSize == 0) {
             super.onMeasure(widthMeasureSpec, heightMeasureSpec)
 
-            val minSize = Math.min(measuredWidth, measuredHeight)
+            val minSize = min(measuredWidth, measuredHeight)
             setMeasuredDimension(minSize, minSize)
             return
         }
@@ -74,11 +75,11 @@ class SquareLinearLayout @JvmOverloads constructor(
         val size = when {
             // If one of the dimensions has no restriction on size, set both dimensions to be the
             // on that does
-            widthSize == 0 || heightSize == 0 -> Math.max(widthSize, heightSize)
+            widthSize == 0 || heightSize == 0 -> max(widthSize, heightSize)
 
             // Both dimensions have restrictions on size, set both dimensions to be the
             // smallest of the two
-            else -> Math.min(widthSize, heightSize)
+            else -> min(widthSize, heightSize)
         }
 
         val newSpec = MeasureSpec.makeMeasureSpec(size, MeasureSpec.EXACTLY)
@@ -106,7 +107,7 @@ class SquareRelativeLayout @JvmOverloads constructor(
         if (widthSize == 0 && heightSize == 0) {
             super.onMeasure(widthMeasureSpec, heightMeasureSpec)
 
-            val minSize = Math.min(measuredWidth, measuredHeight)
+            val minSize = min(measuredWidth, measuredHeight)
             setMeasuredDimension(minSize, minSize)
             return
         }
@@ -114,11 +115,11 @@ class SquareRelativeLayout @JvmOverloads constructor(
         val size = when {
             // If one of the dimensions has no restriction on size, set both dimensions to be the
             // on that does
-            widthSize == 0 || heightSize == 0 -> Math.max(widthSize, heightSize)
+            widthSize == 0 || heightSize == 0 -> max(widthSize, heightSize)
 
             // Both dimensions have restrictions on size, set both dimensions to be the
             // smallest of the two
-            else -> Math.min(widthSize, heightSize)
+            else -> min(widthSize, heightSize)
         }
 
         val newSpec = MeasureSpec.makeMeasureSpec(size, MeasureSpec.EXACTLY)
