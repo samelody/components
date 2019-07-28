@@ -7,7 +7,7 @@ import androidx.appcompat.widget.*
 /**
  * A ImageView widget maintains an aspect ratio based on either width or height.
  *
- * @author Belin Wu
+ * @author Belin Wu <belinwu@qq.com>
  */
 class RatioImageView : AppCompatImageView {
 
@@ -75,14 +75,14 @@ class RatioImageView : AppCompatImageView {
      */
     var ratioType
         get() = _ratioType
-        set(value) {
-            if (value == _ratioType) return
-            when (value) {
+        set(type) {
+            if (type == _ratioType) return
+            when (type) {
                 TYPE_HEIGHT_WIDTH, TYPE_WIDTH_HEIGHT -> {
-                    _ratioType = value
+                    _ratioType = type
                     requestLayout()
                 }
-                else -> throw IllegalStateException("Invalid aspect ratio type")
+                else -> throw IllegalStateException("Invalid ratio type")
             }
         }
 
@@ -111,15 +111,13 @@ class RatioImageView : AppCompatImageView {
 
         if (!_ratioEnabled) return
 
+        var newWidth = measuredWidth
+        var newHeight = measuredHeight
         when (_ratioType) {
-            TYPE_WIDTH_HEIGHT -> {
-                val newHeight = (measuredWidth / _ratio).toInt()
-                setMeasuredDimension(measuredWidth, newHeight)
-            }
-            TYPE_HEIGHT_WIDTH -> {
-                val newWidth = (measuredHeight / _ratio).toInt()
-                setMeasuredDimension(newWidth, measuredHeight)
-            }
+            TYPE_WIDTH_HEIGHT -> newHeight = (newWidth / _ratio).toInt()
+            TYPE_HEIGHT_WIDTH -> newWidth = (newHeight / _ratio).toInt()
+            else -> return
         }
+        setMeasuredDimension(newWidth, newHeight)
     }
 }
