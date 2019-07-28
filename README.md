@@ -18,7 +18,7 @@ A collection of components for Android apps.
 
 - `Core`: core feature component.
 - `SquareLayout`: a collection of layouts be laid out as square.
-- `RatioImageView`: a collection of layouts be laid out as square.
+- `RatioImageView`: A ImageView widget maintains an aspect ratio based on either width or height.
 
 ### IDEA
 
