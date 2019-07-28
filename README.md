@@ -16,15 +16,16 @@ A collection of components for Android apps.
 
 ### WIP
 
-- `core`: core feature component.
-- `squarelayout`: a collection of layouts be laid out as square.
+- `Core`: core feature component.
+- `SquareLayout`: a collection of layouts be laid out as square.
+- `RatioImageView`: a collection of layouts be laid out as square.
 
 ### IDEA
 
-- `adapter`: Modular adapter for Android RecyclerView.
-- `livebattery`: A LiveData for monitoring Android battery.
+- `RecyclerAdapter`: Modular adapter for Android RecyclerView.
+- `LiveBattery`: A LiveData for monitoring Android battery.
 - `okt`: Kotlin DSL for OkHttp.
-- `icontext`: IconTextView for Android.
+- `IconTextView`: IconTextView for Android.
 - `upload`: Upload engine via HTTP.
 - `download`: Download engine via HTTP.
 - `wifile`: Transfer files via Wi-Fi.
